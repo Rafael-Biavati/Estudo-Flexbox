@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul,nav{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+img#logo{
+    width: 200px;
+    
+}
+header{
+    background-color: #fcfcfc;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+header nav{
+    display: flex;
+}
+header li a{
+    color: black;
+}
+header li{
+    margin: 0px 15px;
+}
+header li:first-child{
+    margin-left: 0px;
+}
+header li:last-child{
+    margin-right: 0px;
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        padding: 10px;
+    }
+
+}
+
+.hero{
+    background-image: url(../img/hero.jpg) ;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1{
+    font-size: 3.2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0px #000000a1;
+}
+.hero h3{
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0px #000000a1;
+}
+.btn{
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: black;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    
+}
+
+@media (max-width: 700px){
+    .hero h1{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .hero h3{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+}
+
+
+.conheca-o-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+.conheca-o-hotel h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.conheca-o-hotel p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.conheca-o-hotel hr{
+  width: 200px;
+  height: 1px;
+  margin-bottom: 70px;
+  border-color: black;
+}
+.conheca-o-hotel ul{
+    max-width: 1400px;
+}
+.conheca-o-hotel .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca-o-hotel .grid li{
+    height: 350px;
+    padding: 20px;
+    border: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.conheca-o-hotel .grid li.small{
+    flex-basis: 45%;
+}
+.conheca-o-hotel .grid li.large{
+    flex-basis: 55%;
+}
+
+@media (max-width: 700px){
+    .conheca-o-hotel .grid li.small{
+        flex-basis: 100%;
+    }
+    .conheca-o-hotel .grid li.large{
+        flex-basis: 100%;
+    }
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #839ca1;
+}
+.caracteristicas h3{
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.caracteristicas p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.caracteristicas hr{
+    width: 200px;
+    height: 1px;
+    margin-bottom: 70px;
+    border-color: black;
+  }
+
+  .caracteristicas .grid{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+  }
+  .caracteristicas .grid li{
+    padding: 0 30px;
+    text-align: center;
+  }
+  .caracteristicas .grid li span{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .caracteristicas .grid li h4{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 850px){
+    .caracteristicas .grid{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1200px){
+    .caracteristicas{
+        padding-right: 15vw;
+        padding-left: 15vw;
+
+    }
+}
+
+
