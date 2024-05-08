@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: gray;
+}
+
+.item{
+    display: flex;
+    width: 20%;
+    background-color: rgb(126, 178, 238);
+    height: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    border: solid 1px black;
+}
+
+.item01{
+    order: 4;
+    align-self: end;
+}
+.item02{
+    order: 3;
+    align-self: center;
+}
+.item03{
+    order: 2;
+    align-self: start;
+}
+.item04{
+    order: 1;
+    align-self: center;
+}
