@@ -18,11 +18,11 @@ header{
 }
 
 header img{width: 180px; margin-left: 20px;}
-header nav{display: flex; padding: 20px;}
-header nav li{list-style-type: none; margin: 15px;}
-header nav li:first-child{margin-left: 0px;}
-header nav li:last-child{margin-right: 0px;}
-header nav li a{text-decoration: none;color: black; font-size: 1.1em;}
+header ul{display: flex; padding: 20px;}
+header ul li{list-style-type: none; margin: 15px;}
+header ul li:first-child{margin-left: 0px;}
+header ul li:last-child{margin-right: 0px;}
+header ul li a{text-decoration: none;color: black; font-size: 1.1em;}
 
 @media (max-width:900px){
     header{
@@ -33,7 +33,7 @@ header nav li a{text-decoration: none;color: black; font-size: 1.1em;}
     header img{
         width: 180px;
     }
-    header nav{
+    header ul{
         margin: 0px;
         padding: 0px;
     }
@@ -48,11 +48,11 @@ header nav li a{text-decoration: none;color: black; font-size: 1.1em;}
     header img{
         width: 180px;
     }
-    header nav{
+    header ul{
         margin: 0px;
         padding: 0px;
     }
-    header>nav>li>a{
+    header>ul>li>a{
         font-size: 0.9em;
     }
 }
@@ -97,7 +97,6 @@ header nav li a{text-decoration: none;color: black; font-size: 1.1em;}
 
 .portfolio h1{font-size: 1.8em; flex-basis: 100%; text-align: center; margin-bottom: 40px;}
 .portfolio img{width: 31%; padding: 5px;}
-
 .portfolio hr{width: 60%; border: solid black 1px; margin-bottom: 50px;}
 @media (max-width:900px){
    .portfolio img{
